@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ypLKuF2dliOrz8jHZ7phg7b9Mpj6djv24EjCjM8A4v/mH3g2HHEjGqia91nywNo+ArKg0YmB0Ckmwo1h63oMA==",
+  "dgSpecHash": "b+bxCkoo8iaZm/BnuB0/sqQkZu/0qs6dK7ffTLnhpHYuthXh7mUPBvPI+UTRbNA2GuAzyvQsvB75/gG5owvZmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WSFMi\\Exercism\\csharp\\robot-name\\RobotName.csproj",
+  "projectFilePath": "D:\\dev\\Exercism\\csharp\\robot-name\\RobotName.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WSFMi\\.nuget\\packages\\microsoft.codecoverage\\16.7.0\\microsoft.codecoverage.16.7.0.nupkg.sha512",
     "C:\\Users\\WSFMi\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

@@ -6,7 +6,7 @@ public class Robot
     private readonly Random _random;
     private const string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public static List<string> NamesInUse = new List<string>();
+    public static HashSet<string> NamesInUse = new HashSet<string>();
 
     public Robot()
     {
@@ -24,11 +24,8 @@ public class Robot
 
     private string GenerateRobotsName()
     {
-        var tempLetters = Alphabet[_random.Next(0, 25)].ToString() + Alphabet[_random.Next(0, 25)].ToString();
-        var tempNumbers = _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString();
-
-        var tempName = tempLetters + tempNumbers;
-
+        var tempName = (char)('A' + _random.Next() + 'A' + _random.Next()) + _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString();
+        
         if (NamesInUse.Contains(tempName))
         {
             tempName = GenerateRobotsName();

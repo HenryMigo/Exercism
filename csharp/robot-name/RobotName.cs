@@ -3,16 +3,11 @@ using System.Collections.Generic;
 
 public class Robot
 {
-    private readonly Random _random;
-    private const string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static readonly Random _random = new Random();
 
     public static HashSet<string> NamesInUse = new HashSet<string>();
 
-    public Robot()
-    {
-        _random = new Random();
-        Name = GenerateRobotsName(); 
-    }
+    public Robot() => Name = GenerateRobotsName();
 
     public string Name { get; private set;}
 
@@ -24,14 +19,18 @@ public class Robot
 
     private string GenerateRobotsName()
     {
-        var tempName = (char)('A' + _random.Next() + 'A' + _random.Next()) + _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString() + _random.Next(0, 9).ToString();
-        
-        if (NamesInUse.Contains(tempName))
+        var tempName = GenerateChar().ToString() + GenerateChar() + GenerateDigit() + GenerateDigit() + GenerateDigit();
+
+        do
         {
-            tempName = GenerateRobotsName();
-        }
+            GenerateRobotsName();
+        } while (NamesInUse.Contains(tempName));
 
         NamesInUse.Add(tempName);
         return tempName;
     }
+
+    private char GenerateChar() => (char)('A' + _random.Next(0, 26));
+
+    private int GenerateDigit() => _random.Next(0, 9);
 }

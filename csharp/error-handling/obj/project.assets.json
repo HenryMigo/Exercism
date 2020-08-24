@@ -5589,11 +5589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WSFMi\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
+      "projectUniqueName": "D:\\dev\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
       "projectName": "ErrorHandling",
-      "projectPath": "C:\\Users\\WSFMi\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
+      "projectPath": "D:\\dev\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
       "packagesPath": "C:\\Users\\WSFMi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WSFMi\\Exercism\\csharp\\error-handling\\obj\\",
+      "outputPath": "D:\\dev\\Exercism\\csharp\\error-handling\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

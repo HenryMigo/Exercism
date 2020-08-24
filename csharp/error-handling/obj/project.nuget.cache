@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LXnp6TaxRHI+oCcFM9aCXHGkvkaRrwBOfBT+rINhlrsuIVJpbvLRxjroU07I2ydDhbsrZk85+7wTxL9zDoj/BQ==",
+  "dgSpecHash": "xqYCESEt+1RQwAoeAtZ5k/x4Tr5PmWSn10HlgX+kzui6Wr+zzNrWKxpIgRQgF4zE7Tn736+EiPcs+1chhLzO4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WSFMi\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
+  "projectFilePath": "D:\\dev\\Exercism\\csharp\\error-handling\\ErrorHandling.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WSFMi\\.nuget\\packages\\microsoft.codecoverage\\16.7.0\\microsoft.codecoverage.16.7.0.nupkg.sha512",
     "C:\\Users\\WSFMi\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

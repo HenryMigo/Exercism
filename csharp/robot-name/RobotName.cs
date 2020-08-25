@@ -7,27 +7,26 @@ public class Robot
 
     public static HashSet<string> NamesInUse = new HashSet<string>();
 
-    public Robot() => Name = GenerateRobotsName();
+    public Robot() => GenerateRobotsName();
 
     public string Name { get; private set;}
 
     public void Reset()
     {
         NamesInUse.Remove(Name);
-        Name = GenerateRobotsName();
+        GenerateRobotsName();
     }
 
-    private string GenerateRobotsName()
+    private void GenerateRobotsName()
     {
-        var tempName = GenerateChar().ToString() + GenerateChar() + GenerateDigit() + GenerateDigit() + GenerateDigit();
+        Name = GenerateChar().ToString() + GenerateChar() + GenerateDigit() + GenerateDigit() + GenerateDigit();
 
-        do
+        if (NamesInUse.Contains(Name))
         {
             GenerateRobotsName();
-        } while (NamesInUse.Contains(tempName));
+        }
 
-        NamesInUse.Add(tempName);
-        return tempName;
+        NamesInUse.Add(Name);
     }
 
     private char GenerateChar() => (char)('A' + _random.Next(0, 26));
